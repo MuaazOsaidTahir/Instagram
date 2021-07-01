@@ -1,0 +1,44 @@
+.eachrequest{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.eachrequest:hover{
+    background-color: #FAFAFA;;
+}
+
+.eachrequest div{
+    display: flex;
+    align-items: center;
+}
+
+.eachrequest a{
+    margin-left: 10px;
+    color: black;
+}
+
+.eachrequest button{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.eachrequest .accept_btn{
+    border: 1px solid rgb(4, 83, 4);
+    color: green;
+}
+
+.eachrequest .decline_btn{
+    border: 1px solid rgb(141, 16, 16);
+    color: red;
+}

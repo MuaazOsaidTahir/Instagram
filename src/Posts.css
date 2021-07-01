@@ -1,0 +1,282 @@
+.posts{
+    margin-top: 30px;
+    max-width: 35rem;
+    width: 35rem;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.posts img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.post_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.post_header > div{
+    display: flex;
+    align-items: center;
+}
+
+/* .post_header .MuiAvatar-root > img{
+    background-size: cover;
+} */
+
+.post_header a{
+    margin-left: 10px;
+    color: black;
+}
+
+.post_footer{
+    padding: 5px 20px;
+}
+
+.post_functions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.post_caption{
+    width: 100%;
+}
+
+.post_caption a{
+    margin-bottom: 0px;
+    color: black;
+    text-decoration: none;
+    display: inline;
+}
+
+.post_caption span{
+    margin-left: 8px;
+    display: inline;
+}
+
+.post_caption button{
+    background-color: white;
+    color: lightgray;
+    border: none;
+    outline: none;
+}
+
+.postright_functions{
+    display: flex;
+    align-items: center;
+}
+
+.postright_functions .post_commenticon{
+    margin-left: 5px;
+}
+
+.post_form{
+    /* padding: 0px 20px; */
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+
+.post_form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.post_form button{
+    background-color: white;
+    color: #52BAFA;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.post_comment{
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-left: 8px;
+}
+
+.post_comment a{
+    color: gray;
+    text-decoration: none;
+}
+
+.post_comment h4{
+    margin-bottom: 0px;
+}
+
+.post_comment span{
+    margin-left: 8px;
+}
+
+.posts h4 {
+    font-size: medium;
+}
+
+.liked_button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.liked_button.active{
+    color: red;
+}
+
+.post_showlikes{
+    cursor: pointer;
+}
+
+.postmodal_header{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 13px -9px black;
+}
+
+.postmodal_body{
+    padding: 10px;
+    overflow: scroll;
+}
+
+.postmodal_body::-webkit-scrollbar{
+    display: none;
+}
+
+.postmodal_lists{
+    list-style: none;
+}
+
+.likesmodal_data{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.likesmodal_data a {
+    color: black;
+    text-decoration: none;
+}
+
+.likesmodal_data strong{
+    margin-left: 15px;
+}
+
+.comment_modal{
+    cursor: pointer;
+    font-size: 13px;
+    color: lightgray;
+    margin: 0px;
+}
+
+.postcomments_container{
+    /* border: 0.5px solid lightgray; */
+    padding: 5px;
+    padding-top: 8px;
+    border-radius: 10px;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.postcomments_container .MuiAvatar-root{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postcomments_container small{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 10px;
+}
+
+.commentmodal_image{
+    border-right: 1px solid lightgray;
+    flex: 0.7;
+}
+
+.commentmodal_image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.commentmodal_options{
+    flex: 0.3;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.postcomment_header{
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.postcomment_header a{
+    color: black;
+    margin-left: 10px;
+}
+
+.commentmodal_comments{
+    height: 100%;
+    overflow: scroll;
+}
+
+.commentmodal_comments::-webkit-scrollbar{
+    display: none;
+}
+
+.commentmodalcomments{
+    margin: 0px;
+}
+
+.commentmodalcomments h3{
+    display: inline;
+    font-size: 15px;
+}
+
+.commentmodalcomments .MuiAvatar-root{
+    width: 20px;
+    height: 20px;
+}
+
+.commentmodalcomments_image{
+    display: inline-block;
+}
+
+.commentmodalcomments a{
+    color: black;
+}
+
+.postdel_btn{
+    color: white !important;
+    font-weight: 600 !important;
+    background-color: rgb(180, 31, 31) !important;
+}
+
+.save_picturebutton{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+}

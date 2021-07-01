@@ -1,0 +1,9 @@
+.UserSuggestions a, .UserSuggestions{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.UserSuggestions strong{
+    margin-left: 10px;
+}

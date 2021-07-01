@@ -1,0 +1,298 @@
+.MessagesPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.messages_subcontainer{
+    display: flex;
+    height: 80vh;
+    border: 1px solid lightgrey;
+    width: 70vw;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.messages_subcontainer_left{
+    flex: 0.4;
+    border-right: 1px solid lightgrey;
+}
+
+.messages_subcontainer_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 13px;
+    height: 10vh;
+}
+
+.messages_subcontainer_header p{
+    flex: 1;
+    text-align: center;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.messages_subcontainer_header button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    flex: 0;
+}
+
+.messages_subcontainer_messages{
+    overflow: scroll;
+    height: 70vh;
+}
+
+.username_chatsidebar{
+    color: black;
+}
+
+.messages_subcontainer_messages a{
+    text-decoration: none;
+}
+
+.messages_subcontainer_messages::-webkit-scrollbar{
+    display: none;
+}
+
+.user_messages_avatar{
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.user_messages_avatar:hover{
+    background-color: #EFEFEF;
+}
+
+.user_messages_avatar .MuiAvatar-root{
+    height: 50px;
+    width: 50px;
+}
+
+.user_messages{
+    margin-left: 10px;
+}
+
+.user_messages p{
+    margin: 0px;
+}
+
+.user_last_message{
+    font-size: 13px;
+    color: #9C8EAA;
+}
+
+.messages_subcontainer_right{
+    flex: 0.6;
+}
+
+.messages_subcontainer_nochat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.start_chat_page{
+    background: url("https://www.instagram.com/static/bundles/es6/sprite_glyphs_da7d826d082a.png/da7d826d082a.png");
+    height: 96px;
+    width: 96px;
+    background-position: -244px 0px;
+}
+
+.messages_subcontainer_nochat h2{
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.messages_subcontainer_nochat strong{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.messages_subcontainer_nochat button{
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    background-color: #0095F6;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.messages_subcontainer_userchat{
+    position: relative;
+}
+
+.messages_subcontainer_userchat_header a{
+    border-bottom: 1px solid lightgrey;
+    padding: 13px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.messages_subcontainer_userchat_header a strong{
+    color: black;
+}
+
+.messages_subcontainer_userchat_header strong{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.messages_subcontainer_userchat_body{
+    height: 60vh;
+    overflow: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.messages_subcontainer_userchat_body::-webkit-scrollbar{
+    display: none;
+}
+
+.user_message_container{
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+}
+
+.sent_message{
+    margin-left: auto;
+}
+
+
+.user_message_container .MuiAvatar-root{
+    width: 20px;
+    height: 20px;
+}
+
+.user_message_container p{
+    margin: 0px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message_sent{
+    background-color: #EFEFEF;
+    margin-left: auto;
+    border: none;
+}
+
+.message_recieved{
+    border: 1px solid lightgrey;
+}
+
+.messages_subcontainer_userchat_form{
+    padding: 6px 20px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    width: 100%;
+}
+
+.message_form_container{
+    border: 1px solid lightgrey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 26px;
+}
+
+.message_form_container form{
+    /* border: none; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.message_form_container{
+    display: flex;
+    align-items: center;
+}
+
+.message_form_container input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.userchat_modal_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.userchat_modal_header p{
+    margin: 0px;
+}
+
+.userchat_modal_header button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.userchat_modal_search{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.userchat_modal_search strong{
+    flex: 0.15;
+}
+
+.userchat_modal_search input{
+    flex: 0.85;
+    border: none;
+    outline: none;
+}
+
+.userchat_modal_searches{
+    padding-top: 20px;
+}
+
+.search_user{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.search_user:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+.search_user strong{
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.message_sendbtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #0095F6;
+    font-weight: 600;
+}

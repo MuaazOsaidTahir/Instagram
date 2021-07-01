@@ -1,0 +1,66 @@
+.ProfilePost{
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.ProfilePost:hover::after{
+    content: "";
+    position: absolute;
+    top: -136px;
+    right: 0px;
+    bottom: 0px;
+    left: 14px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.ProfilePost p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.ProfilePost p span{
+    margin-left: 20px;
+}
+
+.ProfilePost p{
+    display: none;
+    z-index: 2;
+    display: flex;
+    opacity: 0;
+}
+
+.ProfilePost:hover p{
+    opacity: 1;
+}
+
+.profilepostmodal_body{
+    padding: 0px;
+    display: flex;
+}
+
+.profilepostmodal_body img{
+    object-fit: cover;
+    flex: 0.7;
+}
+
+.profilepostmodal_body .profilepostmodal_details{
+    flex: 0.3;
+}
+
+.commentmodal_options_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}

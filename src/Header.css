@@ -1,0 +1,199 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 4.5rem;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+
+.header > img {
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+
+.header_right{
+    flex: 0.15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_right .fa-plus-square{
+    font-size: 1.5rem !important;
+    cursor: pointer;
+}
+
+.header_avatar{
+    width: 28px !important;
+    height: 28px !important;
+    cursor: pointer;
+}
+
+.header_home, .header_messages{
+    font-size: 28px !important;
+    color: black;
+    cursor: pointer;
+}
+
+.header_search{
+    padding: 5px 8px;
+    border: 1px solid lightgray;
+    background-color: #FAFAFA;
+    outline: none;
+    border-radius: 3px;
+}
+
+.header_usersearchesbody a{
+    text-decoration: none;
+}
+
+.searchinput_container{
+    position: relative;
+}
+
+.header_searchtooltipicon{
+    position: absolute;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 50%;
+    right: 50%;
+    height: 20px;
+    width: 20px;
+    z-index: 5;
+    background-color: white;
+}
+
+.header_usersearches{
+    position: absolute;
+    top: 50px;
+    height: 20rem;
+    width: 25rem;
+    left: -100px;
+    right: 0px;
+    z-index: 1;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 1px 23px -10px black;
+    overflow-y: auto;
+}
+
+.header_usersearchesheader{
+    padding: 10px;
+    height: 50px;
+}
+
+.searcheduserdetails{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.searcheduserdetails strong{
+    margin-left: 10px;
+    color: black;
+}
+
+.searcheduserdetails:hover{
+    background-color: #FAFAFA;
+}
+
+.header_fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.image_bar{
+    background-color: purple;
+    height: 1px;
+}
+
+.header_popover{
+    list-style: none;
+}
+
+.header_popover a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.header_popover a span{
+    margin-left: 5px;
+}
+
+.header_popover li{
+    cursor: pointer;
+}
+
+.header_popover li:hover{
+    background-color: #FAFAFA;
+}
+
+.request_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.request_list span{
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgb(190, 30, 30);
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_signout{
+    border-top: 1px solid lightgray;
+    display: flex;
+    padding: 5px 10px;
+}
+
+.header_signout:hover{
+    background-color: white !important;
+}
+
+.uploader_caption{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+.uploading_img{
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    margin-top: 5px;
+}
+
+.headeravatar_container{
+    position: relative;
+}
+
+.headeravatar_container .headernotification{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(187, 31, 31);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

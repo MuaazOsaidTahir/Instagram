@@ -1,0 +1,25 @@
+.RequestsPage{
+    height: 100vh;
+    background-color: white;
+}
+
+.requestpagesubcontainer{
+    width: 30rem;
+    border: 1px solid lightgray;
+    margin: auto;
+    background-color: #FAFAFA;
+    padding: 20px;
+    height: 85vh;
+    overflow: scroll;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 14px -7px black;
+}
+
+.requestpagesubcontainer::-webkit-scrollbar{
+    display: none;
+}
+
+.requestpagesubcontainer h2{
+    text-decoration: underline;
+}

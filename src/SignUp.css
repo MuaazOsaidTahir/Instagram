@@ -1,0 +1,37 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 20rem;
+}
+
+.signup img{
+    object-fit: none;
+}
+
+.signup_outerdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup_seconddiv{
+    background-color: white;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.signup_seconddiv p {
+    margin: 0px;
+}
+
+.signuplogin_button{
+    cursor: pointer;
+    color: #0095F6;
+    font-weight: 600;
+}

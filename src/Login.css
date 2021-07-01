@@ -1,0 +1,100 @@
+.login{
+    height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_innerdiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.login_formdiv{
+    width: 20rem;
+    max-width: 20rem;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.login_formdiv form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_formdiv form > img{
+    object-fit: none;
+}
+
+.login_inputs{
+    padding: 6px 10px;
+    background-color: #FAFAFA;
+    border: 1px solid lightgray;
+    outline: none;
+    margin-top: 8px;
+}
+
+.login_button{
+    background-color: #0095F6;
+    color: white;
+    font-weight: 600;
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login_picture{
+    height: 50px;
+    width: 50px;
+    background-image: url('https://www.instagram.com/static/images/homepage/home-phones.png/38825c9d5aa2.png');
+}
+
+.carousel {
+    max-width: 292px;
+    width: 292px;
+    position: relative;
+    left: 391px;
+    top: 4px;
+}
+
+.carousel a{
+    display: none;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+.login_divider{
+    background-color: #DBDBDB;
+    width: 100%;
+    height: 2px;
+    margin-top: 16px;
+}
+
+.login_dividertext{
+    text-align: center;
+    position: absolute;
+    top: -12px;
+    left: 117px;
+    color: lightgray;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+.login_signup{
+    margin-top: 1rem;
+}
+
+.login_signup span{
+    color: #52BAFA;
+    font-weight: 600;
+    cursor: pointer;
+}

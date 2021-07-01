@@ -1,0 +1,247 @@
+.profile{
+    width: 65rem;
+    margin: auto;
+    padding: 20px;
+}
+
+.profile_headercover{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.profileimg_uploader{
+    position: relative;
+}
+
+.profileimg_uploader input{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: fit-content;
+    cursor: pointer;
+    width: 153px;
+}
+
+.profileimg_button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.profileimg_button .MuiAvatar-root{
+    width: 150px;
+    height: 150px;
+}
+
+.profile_header{
+    padding: 1rem 2rem;
+}
+
+.profile_details{
+    flex: 1;
+    line-height: 2rem;
+    margin-left: 60px;
+}
+
+.profile_username{
+    display: flex;
+    align-items: center;
+}
+
+.profile_username p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.profile_followers{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_followersdata{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.profile_followers pre{
+    font-style: normal;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile_editbtn{
+    margin-left: 15px;
+    border-radius: 10px;
+    background: transparent;
+    font-weight: 600;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+}
+
+.profile_imguploader{
+    border: 1px solid lightgray;
+    padding: 3px 10px;
+    width: 100%;
+    opacity: 0;
+}
+
+.proflie_followerbtn{
+    background-color: #0095F6;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: white;
+    font-weight: 600;
+    margin-left: 15px ;
+}
+
+.profileunfollowebtn{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 3px 10px;
+    color: black;
+    font-weight: 600;
+    margin-left: 15px ;
+}
+
+.edit_modal{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_textarea{
+    resize: none;
+    height: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.edit_modal button{
+    border: 1px solid lightgray;
+    outline: none;
+    font-weight: 600;
+}
+
+.unfollower_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.follower_notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.followers_modal{
+    overflow: scroll;
+}
+
+.followers_modal::-webkit-scrollbar{
+    display: none;
+}
+
+.followers_modal > p{
+    text-align: center;
+    font-weight: 600;
+}
+
+.followermodal a{
+    text-decoration: none;
+}
+
+.follower_list{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+.follower_list:hover{
+    background-color: #FAFAFA;
+}
+
+.follower_list a{
+    color: black;
+}
+
+.follower_list strong{
+    margin-left: 10px;
+}
+
+/* toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

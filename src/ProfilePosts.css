@@ -1,0 +1,14 @@
+.profile_post{
+    width: 65rem;
+}
+
+.profile_post img{
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+
+.img_container{
+    position: relative;
+    display: inline;
+}
