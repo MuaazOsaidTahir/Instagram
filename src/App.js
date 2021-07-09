@@ -5,7 +5,7 @@ import BodyLeft from './BodyLeft';
 import BodyRight from './BodyRight';
 import Header from './Header';
 import Login from './Login';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { auth, database } from './firebase';
 import { Context } from "./context/Provider"
 import ProfilePage from './ProfilePage';
@@ -16,11 +16,11 @@ import NoChatSide from './NoChatSide';
 
 function App() {
   const { state, dispatch, username } = useContext(Context)
+  const [screenwidth, setscreenwidth] = useState()
   // const [user] = useAuthState(auth)
 
   useEffect(() => {
     auth.onAuthStateChanged(user => {
-      console.log(user)
       if (user) {
         if (username !== null && user.displayName === null) {
           user.updateProfile({
@@ -41,6 +41,15 @@ function App() {
       }
     })
   }, [username, dispatch])
+
+  useEffect(() => {
+    setscreenwidth(window.screen.width);
+  }, [])
+
+  if(screenwidth < 1050){
+    return <h1>Application for small and medium screen if under development</h1>
+  }
+
   return (
     <div className="App">
       <BrowserRouter>

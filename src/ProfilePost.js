@@ -209,13 +209,17 @@ function ProfilePost({ url, id, caption, name }) {
         setsavedtoggle(false)
     }
 
+    const deletepost = (_id) => {
+        database.collection("users").doc(`${state.displayName}`).collection("posts").doc(`${_id}`).delete();
+    }
+
     return (
         <>
             <div className="ProfilePost" onClick={commentmodalOpen} >
                 <img src={url} alt="" />
                 <p><span><FavoriteIcon />{like.length}</span> <span><ModeCommentIcon />{comment.length}</span> </p>
             </div>
-            <PostModal id={id} imgurl={url} caption={caption} name={name ? name : profilename} userimage={userimage} toggle={toggle} unlike={unlike} commentopen={commentopen} commentmodalClose={commentmodalClose} postcomments={postcomments} commentpost={commentpost} comments={comments} likepost={liked} commentusersdetails={commentusersdetails} savedtoggle={savedtoggle} savepost={savepost} unsavepost={unsavepost} />
+            <PostModal id={id} imgurl={url} caption={caption} name={name ? name : profilename} userimage={userimage} toggle={toggle} unlike={unlike} commentopen={commentopen} commentmodalClose={commentmodalClose} postcomments={postcomments} commentpost={commentpost} comments={comments} likepost={liked} commentusersdetails={commentusersdetails} savedtoggle={savedtoggle} savepost={savepost} unsavepost={unsavepost} deletepost={deletepost} />
         </>
     )
 }

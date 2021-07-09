@@ -50,7 +50,7 @@ const useStyl = makeStyles((theme) => ({
 }));
 
 
-function PostModal({ id, commentusersdetails, likepost, commentopen, commentmodalClose, imgurl, userimage, name, caption, unlike, toggle, comments, postcomments, commentpost, savedtoggle, savepost, unsavepost }) {
+function PostModal({ id, commentusersdetails, likepost, commentopen, commentmodalClose, imgurl, userimage, name, caption, unlike, toggle, comments, postcomments, commentpost, savedtoggle, savepost, unsavepost, deletepost }) {
     const classe = useStyle();
     const [modalStyle] = React.useState(getModalStyle);
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -104,7 +104,7 @@ function PostModal({ id, commentusersdetails, likepost, commentopen, commentmoda
                                             horizontal: 'center',
                                         }}
                                     >
-                                        <Button className={`${clas.typography} postdel_btn`} > Delete </Button>
+                                        <Button className={`${clas.typography} postdel_btn`} onClick={() => deletepost(id)} > Delete </Button>
                                     </Popover>
                                 </> : null
                         }

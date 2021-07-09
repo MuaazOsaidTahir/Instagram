@@ -98,3 +98,27 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 1100px) {
+    .carousel {
+        max-width: 292px;
+        width: 303px;
+        position: relative;
+        left: 390px;
+        top: 4px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .login_innerdiv > img, .carousel{
+        display: none;
+    }
+    
+    .login_innerdiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
